@@ -17,5 +17,5 @@ G = lti(numG, denG)
 
 def correcteur(Kp,Ti,Td):
     numC = [Td*Kp*Ti,Kp,Ti*Kp]
-    denC = [Ti]
+    denC = [Ti,0]
     return numC, denC
