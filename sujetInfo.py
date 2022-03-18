@@ -14,3 +14,8 @@ numG = [K]
 denG = [d3,d2,d1,d0]
 
 G = lti(numG, denG)
+
+def correcteur(Kp,Ti,Td):
+    numC = [Td*Kp*Ti,Kp,Ti*Kp]
+    denC = [Ti]
+    return numC denC
