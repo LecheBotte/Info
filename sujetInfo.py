@@ -18,4 +18,4 @@ G = lti(numG, denG)
 def correcteur(Kp,Ti,Td):
     numC = [Td*Kp*Ti,Kp,Ti*Kp]
     denC = [Ti]
-    return numC denC
+    return numC, denC
